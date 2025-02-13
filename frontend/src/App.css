@@ -1,0 +1,11 @@
+.editor-textarea {
+  height: 600px;
+  overflow-y: auto;
+}
+
+.preview-content {
+  height: 600px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
