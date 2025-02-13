@@ -5,6 +5,14 @@
 
 This project is a **real-time Markdown editor** built with **React (frontend) and Node.js (backend)**. Follow the steps below to run the application locally.
 
+## Live Demo
+
+[![Frontend](https://img.shields.io/badge/Frontend-Live-brightgreen)](https://markdown-neokred.vercel.app)  
+[![Backend](https://img.shields.io/badge/Backend-Live-blue)](https://tjvbrrhajx.us-east-1.awsapprunner.com)
+
+#### Frontend application Deployed in Vercel.
+#### Backend Server deployed in AWS AppRunner.
+
 📌 Prerequisites
 
 ## Make sure you have the following installed:
