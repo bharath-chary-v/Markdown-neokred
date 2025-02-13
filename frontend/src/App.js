@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchHtml = async () => {
       try {
-        const response = await fetch("http://52.90.59.248:4000/convert", {
+        const response = await fetch("https://tjvbrrhajx.us-east-1.awsapprunner.com/convert", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ markdown }),
