@@ -3,8 +3,23 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-app.use(cors()); // Allow all origins
+
 app.use(bodyParser.json());
+
+const allowedOrigins = [
+    "http://localhost:3000", 
+    "https://markdown-neokred.vercel.app"
+];
+
+app.use(cors({
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    }
+}));
 
 function parseMarkdown(markdown) {
     return markdown
